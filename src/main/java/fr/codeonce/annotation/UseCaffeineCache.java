@@ -12,6 +12,6 @@ import org.springframework.context.annotation.Import;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Import(fr.codeonce.annotation.AppConfig.class)
-public @interface UseCaffeine {
+public @interface UseCaffeineCache {
 
 }

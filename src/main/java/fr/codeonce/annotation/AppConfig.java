@@ -29,15 +29,15 @@ public class AppConfig {
 
 	public AppConfig() {
 
-		Set<Class<? extends Object>> allClasses = new Reflections().getTypesAnnotatedWith(UseCaffeine.class);
+		Set<Class<? extends Object>> allClasses = new Reflections().getTypesAnnotatedWith(UseCaffeineCache.class);
 
 		for (Class<? extends Object> clazz : allClasses) {
-			if (clazz.isAnnotationPresent(UseCaffeine.class)) {
+			if (clazz.isAnnotationPresent(UseCaffeineCache.class)) {
 
 				System.out.println(clazz.getName());
 
-				Annotation annotation = clazz.getAnnotation(UseCaffeine.class);
-				UseCaffeine customAnnotation = (UseCaffeine) annotation;
+				Annotation annotation = clazz.getAnnotation(UseCaffeineCache.class);
+				UseCaffeineCache customAnnotation = (UseCaffeineCache) annotation;
 			}
 		}
 

@@ -11,7 +11,7 @@ import org.reflections.Reflections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import fr.codeonce.annotation.UseCaffeine;
+import fr.codeonce.annotation.UseCaffeineCache;
 
 public class CheckAnnotatedClass {
 	
@@ -21,17 +21,17 @@ public class CheckAnnotatedClass {
 
 	@Test
 	public void check1() {
-		Set<Class<? extends Object>> allClasses = new Reflections("fr.codeonce.annotation.test").getTypesAnnotatedWith(UseCaffeine.class);
+		Set<Class<? extends Object>> allClasses = new Reflections("fr.codeonce.annotation.test").getTypesAnnotatedWith(UseCaffeineCache.class);
 		
 		assertFalse(allClasses.isEmpty());
 		
 		for (Class<? extends Object> clazz : allClasses) {
-			if (clazz.isAnnotationPresent(UseCaffeine.class)) {
+			if (clazz.isAnnotationPresent(UseCaffeineCache.class)) {
 
 				log.debug("class: {} found with annotation", clazz.getName());
 
-				Annotation annotation = clazz.getAnnotation(UseCaffeine.class);
-				UseCaffeine customAnnotation = (UseCaffeine) annotation;
+				Annotation annotation = clazz.getAnnotation(UseCaffeineCache.class);
+				UseCaffeineCache customAnnotation = (UseCaffeineCache) annotation;
 				Assert.assertNotNull(customAnnotation);
 			}
 		}

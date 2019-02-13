@@ -1,8 +1,8 @@
 package fr.codeonce.annotation.test;
 
-import fr.codeonce.annotation.UseCaffeine;
+import fr.codeonce.annotation.UseCaffeineCache;
 
-@UseCaffeine
+@UseCaffeineCache
 public class SimpleAnnotatedClass {
 
 }
