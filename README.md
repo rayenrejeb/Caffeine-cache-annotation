@@ -12,4 +12,11 @@ public class SpringcacheApplication {
 		SpringApplication.run(SpringcacheApplication.class, args);
 	}
 
-}
+}  
+  
+# Maven Dependency  
+		<dependency>
+			<groupId>caffeine</groupId>
+			<artifactId>cache-annotation</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
