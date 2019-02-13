@@ -1,4 +1,4 @@
-package fr.codeonce.annotation;
+package caffeine.annotation;
 
 import java.lang.annotation.Annotation;
 import java.util.Set;

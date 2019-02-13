@@ -1,4 +1,4 @@
-package fr.codeonce.annotation.test;
+package caffeine.annotation.test;
 
 import static org.junit.Assert.assertFalse;
 
@@ -11,7 +11,7 @@ import org.reflections.Reflections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import fr.codeonce.annotation.UseCaffeineCache;
+import caffeine.annotation.UseCaffeineCache;
 
 public class CheckAnnotatedClass {
 	

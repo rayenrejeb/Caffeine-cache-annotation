@@ -1,4 +1,4 @@
-package fr.codeonce.annotation;
+package caffeine.annotation;
 
 import java.util.Arrays;
 

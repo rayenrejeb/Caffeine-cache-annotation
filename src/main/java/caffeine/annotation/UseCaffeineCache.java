@@ -1,4 +1,4 @@
-package fr.codeonce.annotation;
+package caffeine.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Import;
 @Documented
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Import(fr.codeonce.annotation.AppConfig.class)
+@Import(caffeine.annotation.AppConfig.class)
 public @interface UseCaffeineCache {
 
 }
