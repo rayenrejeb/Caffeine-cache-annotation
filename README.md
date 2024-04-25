@@ -1,11 +1,13 @@
-# Caffeine-cache-annotation
+# Caffeine-cache-annotation 
 Caffeine Cache Annotation - Spring cache  
+## @UseCaffeineCache
 This annotation is dedicated for spring applications  
 Can be used on any class to activate the use of Caffeine Cache  
 # Example    
+```
 @SpringBootApplication  
 @EnableCaching  
-@UseCaffeineCache  
+@UseCaffeineCache
 public class SpringcacheApplication {
 
 	public static void main(String[] args) {
@@ -13,6 +15,7 @@ public class SpringcacheApplication {
 	}
 
 }  
+```
   
 # Maven Dependency  
 		<dependency>
